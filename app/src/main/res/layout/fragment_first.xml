@@ -22,8 +22,8 @@
 
         <TextView
                 android:id="@+id/textview_first"
-                android:layout_width="394dp"
-                android:layout_height="831dp"
+                android:layout_width="374dp"
+                android:layout_height="767dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/lorem_ipsum"
                 app:layout_constraintBottom_toBottomOf="parent"
