@@ -1,35 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/waer">
 
-    <com.google.android.material.appbar.AppBarLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:fitsSystemWindows="true"
-    >
+    <androidx.cardview.widget.CardView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:elevation="12dp"
+            android:id="@+id/imageView"
+            app:cardCornerRadius="69dp"
+            android:layout_centerHorizontal="true" tools:ignore="DuplicateIds"
+            android:layout_marginTop="40dp">
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sad"/>
+    </androidx.cardview.widget.CardView>
 
-        <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/fab_margin"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@android:drawable/ic_dialog_email"/>
+            android:text="Виды кофе"
+            android:textStyle="italic"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:textSize="27sp"
+            android:backgroundTint="@color/brown"
+            app:icon="@mipmap/ic_launcher_foreground1"
+            app:iconGravity="start"
+            app:iconSize="50dp"
+            app:iconMarginEnd="10dp"/>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+     <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виды добавок"
+            android:textStyle="italic"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:textSize="27sp"
+            android:backgroundTint="@color/brown"
+            app:icon="@mipmap/ic_launcher_foreground1"
+            app:iconGravity="start"
+            app:iconSize="50dp"
+            app:iconMarginEnd="10dp"/>
+
+     <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Карта"
+            android:textStyle="italic"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:textSize="27sp"
+            app:icon="@mipmap/ic_launcher_foreground1"
+            app:iconGravity="start"
+            app:iconSize="50dp"
+            app:iconMarginEnd="10dp"
+            android:backgroundTint="@color/brown"/>
+
+</RelativeLayout>
