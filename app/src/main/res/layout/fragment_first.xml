@@ -1,34 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".FirstFragment">
-    <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp">
-        <Button
-                android:id="@+id/button_first"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/next"
-                app:layout_constraintBottom_toTopOf="@id/textview_first"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/waer"
+                tools:context=".FirstFragment">
 
-        <TextView
-                android:id="@+id/textview_first"
-                android:layout_width="374dp"
-                android:layout_height="767dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/lorem_ipsum"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/button_first" app:layout_constraintHorizontal_bias="0.0"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:elevation="12dp"
+            android:id="@+id/cardViewImageView"
+            app:cardCornerRadius="69dp"
+            android:layout_centerHorizontal="true"
+            tools:ignore="DuplicateIds"
+            android:layout_marginTop="40dp">
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sad"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+            android:id="@+id/buttonFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виды кофе"
+            android:textStyle="italic"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewImageView"
+            android:textSize="27sp"
+            android:backgroundTint="@color/brown"
+            app:icon="@drawable/rar"
+            app:iconGravity="start"
+            app:iconSize="50dp"/>
+
+    <Button
+            android:id="@+id/buttonSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виды добавок"
+            android:textStyle="italic"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewImageView"
+            android:textSize="27sp"
+            android:backgroundTint="@color/brown"
+            app:icon="@drawable/rar"
+            app:iconGravity="start"
+            app:iconSize="50dp"/>
+
+    <Button
+            android:id="@+id/buttonThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Карта"
+            android:textStyle="italic"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewImageView"
+            android:textSize="27sp"
+            app:icon="@android:drawable/ic_dialog_map"
+            app:iconGravity="start"
+            app:iconSize="50dp"
+            android:backgroundTint="@color/brown"/>
+
+</RelativeLayout>

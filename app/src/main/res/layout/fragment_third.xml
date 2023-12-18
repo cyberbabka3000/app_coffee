@@ -6,17 +6,18 @@
     android:paddingLeft="1dp"
     android:paddingTop="1dp"
     android:paddingRight="1dp"
-    tools:context=".SecondFragment"
+    tools:context=".ThirdFragment"
     android:background="@color/brown">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonReturn"
+        android:id="@+id/buttonReturn2"
         android:layout_width="125dp"
         android:layout_height="88dp"
         android:layout_marginTop="23dp"
         android:backgroundTint="@color/brown"
         app:strokeColor="@color/brown"
         android:layout_marginStart="-20dp" />
+
     <ImageView
         android:layout_width="79dp"
         android:layout_height="78dp"
@@ -25,7 +26,7 @@
         android:src="@drawable/was"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonKinds"
+        android:id="@+id/buttonAdditives"
         android:layout_width="266dp"
         android:layout_height="85dp"
         android:layout_marginTop="23dp"
@@ -35,7 +36,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Виды кофе"
+        android:text="Добавки"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:paddingStart="8dp"
@@ -46,7 +47,7 @@
         android:layout_marginEnd="20dp"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonEspresso"
+        android:id="@+id/buttonCinnamon"
         android:layout_width="353dp"
         android:layout_height="84dp"
         android:layout_marginTop="133dp"
@@ -56,7 +57,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Эспрессо"
+        android:text="Корица"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingStart="8dp"
@@ -74,16 +75,16 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/imageEspresso"
+            android:id="@+id/imageCinnamon"
             android:layout_width="65dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/wer2"/>
+            android:src="@drawable/wer"/>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonAmerican"
+        android:id="@+id/buttonVanilla"
         android:layout_width="353dp"
         android:layout_height="84dp"
         android:layout_marginTop="242dp"
@@ -93,7 +94,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Американо"
+        android:text="Ваниль"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingStart="8dp"
@@ -111,17 +112,17 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/imageAmerican"
+            android:id="@+id/imageVanilla"
             android:layout_width="65dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/qas2"
+            android:src="@drawable/qas"
             tools:ignore="DuplicateIds"/>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonDoppio"
+        android:id="@+id/buttonBadian"
         android:layout_width="353dp"
         android:layout_height="84dp"
         android:layout_marginTop="351dp"
@@ -131,7 +132,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Доппио"
+        android:text="Бадьян"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingStart="8dp"
@@ -149,17 +150,17 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/imageDoppio"
+            android:id="@+id/imageRadian"
             android:layout_width="65dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/xaz2"
+            android:src="@drawable/xaz"
             tools:ignore="DuplicateIds"/>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonRistretto"
+        android:id="@+id/buttonCarnation"
         android:layout_width="353dp"
         android:layout_height="84dp"
         android:layout_marginTop="460dp"
@@ -169,7 +170,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Ристретто"
+        android:text="Гвоздика"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingStart="8dp"
@@ -187,17 +188,17 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/imageRistretto"
+            android:id="@+id/imageCarnation"
             android:layout_width="65dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pok2"
+            android:src="@drawable/pok"
             tools:ignore="DuplicateIds"/>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonLungo"
+        android:id="@+id/buttonGinger"
         android:layout_width="353dp"
         android:layout_height="84dp"
         android:layout_marginTop="566dp"
@@ -207,7 +208,7 @@
         app:strokeWidth="5dp"
         app:cornerRadius="19dp"
         android:layout_alignParentEnd="true"
-        android:text="Лунго"
+        android:text="Имбирь"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingStart="8dp"
@@ -225,11 +226,11 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/imageLungo"
+            android:id="@+id/imageGinder"
             android:layout_width="65dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pol2"
+            android:src="@drawable/pol"
             tools:ignore="DuplicateIds"/>
 
     </androidx.cardview.widget.CardView>
