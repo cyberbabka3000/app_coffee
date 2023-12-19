@@ -1,95 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/waer"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary" />
+        android:fitsSystemWindows="true"
+        >
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="270dp"
-        android:layout_height="270dp"
-        android:elevation="12dp"
-        android:id="@+id/cardViewImageView"
-        app:cardCornerRadius="69dp"
-        android:layout_centerHorizontal="true"
-        tools:ignore="DuplicateIds"
-        android:layout_marginTop="40dp">
+    </com.google.android.material.appbar.AppBarLayout>
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="280dp"
-            android:layout_height="280dp"
-            android:padding="1dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/sad"/>
-    </androidx.cardview.widget.CardView>
+    <include layout="@layout/content_main"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonFork"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Виды кофе"
-        android:textStyle="italic"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/cardViewImageView"
-        android:textSize="27sp"
-        android:backgroundTint="@color/brown"
-        app:icon="@drawable/rar"
-        app:iconGravity="start"
-        app:iconSize="50dp"/>
-
-    <Button
-        android:id="@+id/buttonPower"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Виды добавок"
-        android:textStyle="italic"
-        android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/cardViewImageView"
-        android:textSize="27sp"
-        android:backgroundTint="@color/brown"
-        app:icon="@drawable/rar"
-        app:iconGravity="start"
-        app:iconSize="50dp"/>
-
-    <Button
-        android:id="@+id/buttonBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Карта"
-        android:textStyle="italic"
-        android:layout_marginTop="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/cardViewImageView"
-        android:textSize="27sp"
-        app:icon="@android:drawable/ic_dialog_map"
-        app:iconGravity="start"
-        app:iconSize="50dp"
-        android:backgroundTint="@color/brown"/>
-
-    <fragment
-        android:id="@+id/nav_host_fragment_content_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph" />
-
-
-</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

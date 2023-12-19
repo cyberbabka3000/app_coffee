@@ -1,238 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingLeft="1dp"
-    android:paddingTop="1dp"
-    android:paddingRight="1dp"
-    tools:context=".ThirdFragment"
-    android:background="@color/brown">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonReturn2"
-        android:layout_width="125dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="23dp"
-        android:backgroundTint="@color/brown"
-        app:strokeColor="@color/brown"
-        android:layout_marginStart="-20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        tools:context=".MainActivity"
+        android:background="@color/brown">
 
-    <ImageView
-        android:layout_width="79dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/was"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonAdditives"
-        android:layout_width="266dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Добавки"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="20dp"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonCinnamon"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Корица"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn2"
+            android:layout_width="125dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/brown"
+            app:strokeColor="@color/brown"
+            android:layout_marginStart="-20dp" />
 
         <ImageView
-            android:id="@+id/imageCinnamon"
+            android:layout_width="79dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/was"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdditives"
+            android:layout_width="266dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Добавки"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCinnamon"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="133dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Корица"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wer"/>
+            android:layout_marginTop="145dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/imageCinnamon"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wer"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonVanilla"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="242dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Ваниль"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonVanilla"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="242dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Ваниль"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
 
-        <ImageView
-            android:id="@+id/imageVanilla"
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/qas"
-            tools:ignore="DuplicateIds"/>
+            android:layout_marginTop="254dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/imageVanilla"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qas"
+                tools:ignore="DuplicateIds"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonBadian"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="351dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Бадьян"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="363dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBadian"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="351dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Бадьян"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
 
-        <ImageView
-            android:id="@+id/imageRadian"
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/xaz"
-            tools:ignore="DuplicateIds"/>
+            android:layout_marginTop="363dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/imageRadian"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xaz"
+                tools:ignore="DuplicateIds"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonCarnation"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Гвоздика"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCarnation"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Гвоздика"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
 
-        <ImageView
-            android:id="@+id/imageCarnation"
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pok"
-            tools:ignore="DuplicateIds"/>
+            android:layout_marginTop="472dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/imageCarnation"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pok"
+                tools:ignore="DuplicateIds"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonGinger"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="566dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Имбирь"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="578dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonGinger"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="566dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Имбирь"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
 
-        <ImageView
-            android:id="@+id/imageGinder"
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pol"
-            tools:ignore="DuplicateIds"/>
+            android:layout_marginTop="578dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/imageGinder"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pol"
+                tools:ignore="DuplicateIds"/>
 
-</RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,237 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingLeft="1dp"
-    android:paddingTop="1dp"
-    android:paddingRight="1dp"
-    tools:context=".SecondFragment"
-    android:background="@color/brown">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonReturn"
-        android:layout_width="125dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="23dp"
-        android:backgroundTint="@color/brown"
-        app:strokeColor="@color/brown"
-        android:layout_marginStart="-20dp" />
-    <ImageView
-        android:layout_width="79dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/was"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        tools:context=".SecondFragment"
+        android:background="@color/brown">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonKinds"
-        android:layout_width="266dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Виды кофе"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="20dp"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonEspresso"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Эспрессо"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
-
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn"
+            android:layout_width="125dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/brown"
+            app:strokeColor="@color/brown"
+            android:layout_marginStart="-20dp" />
         <ImageView
-            android:id="@+id/imageEspresso"
+            android:layout_width="79dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/was"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonKinds"
+            android:layout_width="266dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Виды кофе"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEspresso"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="133dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Эспрессо"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wer2"/>
+            android:layout_marginTop="145dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageEspresso"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wer2"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAmerican"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="242dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Американо"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="254dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageAmerican"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qas2"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDoppio"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="351dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Доппио"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="363dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageDoppio"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xaz2"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRistretto"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Ристретто"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageRistretto"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pok2"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLungo"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="566dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Лунго"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="578dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageLungo"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pol2"
+                tools:ignore="DuplicateIds"/>
 
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonAmerican"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="242dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Американо"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
-
-        <ImageView
-            android:id="@+id/imageAmerican"
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/qas2"
-            tools:ignore="DuplicateIds"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonDoppio"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="351dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Доппио"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="363dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
-
-        <ImageView
-            android:id="@+id/imageDoppio"
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/xaz2"
-            tools:ignore="DuplicateIds"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonRistretto"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Ристретто"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
-
-        <ImageView
-            android:id="@+id/imageRistretto"
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pok2"
-            tools:ignore="DuplicateIds"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonLungo"
-        android:layout_width="353dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="566dp"
-        android:layout_marginRight="23dp"
-        android:backgroundTint="@color/brown1"
-        app:strokeColor="@color/brown2"
-        app:strokeWidth="5dp"
-        app:cornerRadius="19dp"
-        android:layout_alignParentEnd="true"
-        android:text="Лунго"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="2dp"
-        android:paddingBottom="4dp"
-        tools:ignore="DuplicateIds,RtlHardcoded"
-        android:layout_marginEnd="27dp"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="65dp"
-        android:layout_marginTop="578dp"
-        android:layout_marginLeft="37dp"
-        app:cardCornerRadius="24dp"
-        android:layout_height="60dp">
-
-        <ImageView
-            android:id="@+id/imageLungo"
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pol2"
-            tools:ignore="DuplicateIds"/>
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
