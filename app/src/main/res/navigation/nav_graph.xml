@@ -24,13 +24,28 @@
     </fragment>
 
     <fragment
+        android:id="@+id/espressoFragment"
+        android:name="com.example.coffee_app.EspressoFragment"
+        android:label="Espresso Fragment"
+        tools:layout="@layout/fragment_espresso" >
+        <action
+            android:id="@+id/action_espressoFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.coffee_app.SecondFragment"
         android:label="Second Fragment">
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_EspressoFragment"
+            app:destination="@id/espressoFragment"/>
     </fragment>
+
+
 
     <fragment
         android:id="@+id/thirdFragment"
@@ -40,6 +55,7 @@
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
+
     <activity
         android:id="@+id/mapActivity"
         android:name="com.example.coffee_app.MapActivity"

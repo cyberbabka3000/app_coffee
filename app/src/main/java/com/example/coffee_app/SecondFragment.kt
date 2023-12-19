@@ -30,8 +30,9 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
 
-        //binding.buttonEspresso.setOnClickListener {
-            //findNavController().navigate(R.id.) }
+        binding.buttonEspresso.setOnClickListener {
+            findNavController().navigate(R.id.action_SecondFragment_to_EspressoFragment)
+        }
 
         //binding.buttonThird.setOnClickListener {
             //findNavController().navigate(R.id.action_FirstFragment_to_MapFragment) }

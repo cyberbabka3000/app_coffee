@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brown"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
@@ -12,7 +13,7 @@
         android:paddingLeft="1dp"
         android:paddingTop="1dp"
         android:paddingRight="1dp"
-        tools:context=".MainActivity"
+        tools:context=".TrirdFragment"
         android:background="@color/brown">
 
         <com.google.android.material.button.MaterialButton
@@ -23,7 +24,6 @@
             android:backgroundTint="@color/brown"
             app:strokeColor="@color/brown"
             android:layout_marginStart="-20dp" />
-
         <ImageView
             android:layout_width="79dp"
             android:layout_height="78dp"
@@ -241,6 +241,537 @@
 
         </androidx.cardview.widget.CardView>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBlackpepper"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="675dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Черный перец"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="686dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageBlackpepper"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/red"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSalt"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="784dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Соль"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="795dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageSalt"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ref"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRedpepper"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="890dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Красный перец"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="902dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageRedpepper"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rew"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNutmeg"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="999dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Мускатный орех"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1011dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageNutmeg"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tyg"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCoconutoil"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1108dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Какосовое масло"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1120dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageCoconutoil"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tyh"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonButter"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1217dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Сливочное масло"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1229dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageButter"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lik"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCaramel"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1326dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Карамель"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1338dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageCaramel"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jik"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCheese"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1432dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Сыр"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1444dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageCheese"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hik"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonTonic"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1541dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Тоник"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1553dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageTonic"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kip"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMint"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1648dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Мята"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1660dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageMint"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nim"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLavender"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1754dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Лаванда"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1766dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageLavender"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/max"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCitrusfruits"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1863dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Цитрусы"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1977dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageCitrusfruits"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xam"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonHoney"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="1972dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Мед"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="1875dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageHoney"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ban"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAlcohol"
+            android:layout_width="353dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="2080dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@color/brown1"
+            app:strokeColor="@color/brown2"
+            app:strokeWidth="5dp"
+            app:cornerRadius="19dp"
+            android:layout_alignParentEnd="true"
+            android:text="Алкоголь"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            tools:ignore="DuplicateIds,RtlHardcoded"
+            android:layout_marginEnd="27dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_marginTop="2092dp"
+            android:layout_marginLeft="37dp"
+            app:cardCornerRadius="24dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageAlcohol"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alk"
+                tools:ignore="DuplicateIds"/>
+
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 </ScrollView>
