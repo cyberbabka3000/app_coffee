@@ -34,8 +34,13 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_EspressoFragment)
         }
 
-        //binding.buttonThird.setOnClickListener {
-            //findNavController().navigate(R.id.action_FirstFragment_to_MapFragment) }
+        binding.buttonAmericano.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_americanoFragment)
+        }
+
+        binding.buttonDoppio.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_doppioFragment)
+        }
 
 
     }

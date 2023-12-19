@@ -29,6 +29,20 @@ class ThirdFragment : Fragment() {
             findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
         }
 
+        binding.buttonCinnamon.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_cinnamonFragment)
+        }
+
+        binding.buttonVanilla.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_vanillaFragment)
+        }
+
+        binding.buttonBadian.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_badianFragment)
+        }
+
+
+
     }
 
     override fun onDestroyView() {

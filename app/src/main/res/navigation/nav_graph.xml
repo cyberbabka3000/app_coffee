@@ -43,9 +43,35 @@
         <action
             android:id="@+id/action_SecondFragment_to_EspressoFragment"
             app:destination="@id/espressoFragment"/>
+        <action
+            android:id="@+id/action_secondFragment_to_americanoFragment"
+            app:destination="@id/americanoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_doppioFragment"
+            app:destination="@id/doppioFragment" />
     </fragment>
 
 
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.example.coffee_app.MapActivity"
+        android:label="MapActivity" />
+    <fragment
+        android:id="@+id/americanoFragment"
+        android:name="com.example.coffee_app.AmericanoFragment"
+        android:label="AmericanoFragment" >
+        <action
+            android:id="@+id/action_americanoFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doppioFragment"
+        android:name="com.example.coffee_app.DoppioFragment"
+        android:label="DoppioFragment" >
+        <action
+            android:id="@+id/action_doppioFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/thirdFragment"
@@ -54,11 +80,39 @@
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_cinnamonFragment"
+            app:destination="@id/cinnamonFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_vanillaFragment"
+            app:destination="@id/vanillaFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_badianFragment"
+            app:destination="@id/badianFragment" />
     </fragment>
-
-    <activity
-        android:id="@+id/mapActivity"
-        android:name="com.example.coffee_app.MapActivity"
-        android:label="MapActivity" />
+    <fragment
+        android:id="@+id/cinnamonFragment"
+        android:name="com.example.coffee_app.CinnamonFragment"
+        android:label="CinnamonFragment" >
+        <action
+            android:id="@+id/action_cinnamonFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vanillaFragment"
+        android:name="com.example.coffee_app.VanillaFragment"
+        android:label="VanillaFragment" >
+        <action
+            android:id="@+id/action_vanillaFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/badianFragment"
+        android:name="com.example.coffee_app.BadianFragment"
+        android:label="BadianFragment" >
+        <action
+            android:id="@+id/action_badianFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
 
 </navigation>

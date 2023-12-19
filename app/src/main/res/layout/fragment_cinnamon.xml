@@ -12,15 +12,15 @@
         android:layout_marginTop="0dp"
         android:padding="40dp"
         android:background="@color/brown"
-        tools:context=".EspressoFragment">
+        tools:context=".CinnamonFragment">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonReturn3"
+            android:id="@+id/buttonReturn6"
             android:layout_width="76dp"
             android:layout_height="76dp"
             tools:ignore="MissingConstraints" />
         <ImageView
-            android:id="@+id/imageEspresso"
+            android:id="@+id/imageCinnamon"
             android:layout_width="76dp"
             android:layout_height="76dp"
             android:scaleType="centerCrop"
@@ -41,7 +41,7 @@
                 android:scaleType="centerCrop"
                 android:layout_height="76dp"
                 tools:layout_editor_absoluteY="-4dp"
-                android:src="@drawable/wer2"
+                android:src="@drawable/wer"
                 tools:layout_editor_absoluteX="250dp"/>
         </androidx.cardview.widget.CardView>
 
@@ -50,20 +50,23 @@
             android:layout_width="147dp"
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
-            android:text="Эспрессо"
+            android:text="Корица"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.182"
-            app:layout_constraintStart_toEndOf="@+id/imageEspresso"
+            app:layout_constraintStart_toEndOf="@+id/imageCinnamon"
             app:layout_constraintTop_toTopOf="parent"/>
         <TextView
             android:id="@+id/textComposition"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="Состав: Эспрессо."
+            android:text="Влияние на вкус: Добавление корицы придает кофе особый вкус. Пряные, слегка
+сладкие и теплые нотки корицы могут смягчить горечь кофе и придать ему
+некоторую сложность. Это особенно актуально для кофейных напитков с молоком,
+где корица может хорошо сочетаться с молочными нотками."
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,29 +80,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Размер порции: 30–35 мл."
+            android:text="Свойства: Антиоксиданты: Корица содержит антиоксиданты, которые могут быть
+полезны для здоровья.
+Противовоспалительные свойства: Исследования показывают, что корица
+может обладать противовоспалительными свойствами, что может быть
+полезно для организма."
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textComposition" />
-
-        <TextView
-            android:id="@+id/textTaste"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Вкус: Крепкий чёрный кофе с золотистой пенкой."
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textPortionSize"
-            app:layout_constraintVertical_bias="1.0"
-            android:layout_marginTop="8dp"/>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
