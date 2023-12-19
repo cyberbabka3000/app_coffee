@@ -17,10 +17,10 @@
         <action
             android:id="@+id/action_FirstFragment_to_ThirdFragment"
             app:destination="@id/thirdFragment" />
-
         <action
-            android:id="@+id/action_FirstFragment_to_MapFragment"
-            app:destination="@id/mapFragment" />
+            android:id="@+id/action_firstFragment_to_mapActivity"
+            app:destination="@id/mapActivity" />
+
     </fragment>
 
     <fragment
@@ -40,15 +40,9 @@
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
-
-    <fragment
-        android:id="@+id/mapFragment"
-        android:name="com.example.coffee_app.MapFragment"
-        android:label="Map Fragment">
-        <!-- Define any arguments or transitions specific to FourthFragment -->
-        <action
-            android:id="@+id/action_mapFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
-    </fragment>
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.example.coffee_app.MapActivity"
+        android:label="MapActivity" />
 
 </navigation>

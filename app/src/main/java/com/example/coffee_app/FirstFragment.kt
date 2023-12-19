@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
         }
 
         binding.buttonThird.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_MapFragment)
+            findNavController().navigate(R.id.action_firstFragment_to_mapActivity)
         }
     }
 
