@@ -16,22 +16,20 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        return binding.root
-
+        return _binding!!.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonReturn.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            findNavController().navigate(R.id.action_secondFragment_to_FirstFragment)
         }
 
         binding.buttonEspresso.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_EspressoFragment)
+            findNavController().navigate(R.id.action_secondFragment_to_EspressoFragment)
         }
 
         binding.buttonAmericano.setOnClickListener {
@@ -40,6 +38,18 @@ class SecondFragment : Fragment() {
 
         binding.buttonDoppio.setOnClickListener {
             findNavController().navigate(R.id.action_secondFragment_to_doppioFragment)
+        }
+
+        binding.buttonRistretto.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_ristettoFragment)
+        }
+
+        binding.buttonLungo.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_lungoFragment)
+        }
+
+        binding.buttonRomanscoffee.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_romanoFragment)
         }
 
 

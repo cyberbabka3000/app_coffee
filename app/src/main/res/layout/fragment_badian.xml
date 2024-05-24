@@ -12,7 +12,7 @@
         android:layout_marginTop="0dp"
         android:padding="40dp"
         android:background="@color/brown"
-        tools:context=".BadianFragment">
+        tools:context=".supplements.BadianFragment">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonReturn8"
