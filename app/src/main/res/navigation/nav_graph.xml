@@ -63,6 +63,57 @@
             app:destination="@+id/secondFragment"/>
     </fragment>
 
+    <fragment
+        android:id="@+id/cubanFragment"
+        android:name="com.example.coffee_app.coffee.CubanFragment"
+        android:label="Cuban Fragment"
+        tools:layout="@layout/fragment_cuban">
+        <action
+            android:id="@+id/action_cubanFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/tripploFragment"
+        android:label="Tripplo Fragment"
+        android:name="com.example.coffee_app.coffee.TripploFragment"
+        tools:layout="@layout/fragment_tripplo">
+        <action
+            android:id="@+id/action_tripploFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/affogatoFragment"
+        android:label="Affogato Fragment"
+        android:name="com.example.coffee_app.coffee.AffogatoFragment"
+        tools:layout="@layout/fragment_affogato">
+        <action
+            android:id="@+id/action_affogatoFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cappuccinoFragment"
+        android:label="Cappuccino Fragment"
+        android:name="com.example.coffee_app.coffee.CappuccinoFragment"
+        tools:layout="@layout/fragment_cappuccino">
+        <action
+            android:id="@+id/action_cappuccinoFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/latteFragment"
+        android:name="com.example.coffee_app.coffee.LatteFragment"
+        android:label="Latte Fragment"
+        tools:layout="@layout/fragment_latte">
+        <action
+            android:id="@+id/action_latteFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+
 
     <fragment
         android:id="@+id/secondFragment"
@@ -89,6 +140,21 @@
         <action
             android:id="@+id/action_secondFragment_to_romanoFragment"
             app:destination="@id/romanoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_cubanFragment"
+            app:destination="@id/cubanFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_tripploFragment"
+            app:destination="@id/tripploFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_affogatoFragment"
+            app:destination="@id/affogatoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_cappuccinoFragment"
+            app:destination="@id/cappuccinoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_latteFragment"
+            app:destination="@id/latteFragment" />
     </fragment>
 
 

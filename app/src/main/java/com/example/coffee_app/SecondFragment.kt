@@ -52,6 +52,26 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_secondFragment_to_romanoFragment)
         }
 
+        binding.buttonCubancoffee.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_cubanFragment)
+
+        }
+
+        binding.buttonTriplo.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_tripploFragment)
+        }
+
+        binding.buttonAffogato.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_affogatoFragment)
+        }
+
+        binding.buttonCappuccino.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_cappuccinoFragment)
+        }
+
+        binding.buttonLatte.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_latteFragment)
+        }
 
     }
 
