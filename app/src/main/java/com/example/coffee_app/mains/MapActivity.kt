@@ -1,8 +1,9 @@
-package com.example.coffee_app
+package com.example.coffee_app.mains
 
 import android.app.Activity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.coffee_app.R
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition

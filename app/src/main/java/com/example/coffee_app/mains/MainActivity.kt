@@ -1,4 +1,4 @@
-package com.example.coffee_app
+package com.example.coffee_app.mains
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.example.coffee_app.R
 import com.example.coffee_app.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 

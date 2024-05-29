@@ -13,7 +13,7 @@
         android:paddingLeft="1dp"
         android:paddingTop="1dp"
         android:paddingRight="1dp"
-        tools:context=".SecondFragment"
+        tools:context=".mains.SecondFragment"
         android:background="@color/brown">
 
         <com.google.android.material.button.MaterialButton

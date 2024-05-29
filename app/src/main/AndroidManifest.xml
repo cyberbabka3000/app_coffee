@@ -15,11 +15,11 @@
 
 
         <activity
-            android:name=".MapActivity"
+            android:name=".mains.MapActivity"
             android:exported="false"
              />
         <activity
-            android:name=".MainActivity"
+            android:name=".mains.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Coffee_app">

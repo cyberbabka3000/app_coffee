@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.coffee_app.FirstFragment"
+        android:name="com.example.coffee_app.mains.FirstFragment"
         android:label="First Fragment">
 
         <action
@@ -113,11 +113,61 @@
             app:destination="@+id/secondFragment"/>
     </fragment>
 
+    <fragment
+        android:label="Vienne Fragment"
+        android:id="@+id/vienneFragment"
+        android:name="com.example.coffee_app.coffee.VienneFragment"
+        tools:layout="@layout/fragment_vienne">
+        <action
+            android:id="@+id/action_vienneFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/melangeFragment"
+        android:name="com.example.coffee_app.coffee.MelangeFragment"
+        android:label="Melange Fragment"
+        tools:layout="@layout/fragment_melange">
+        <action
+            android:id="@+id/action_melangeFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/flatwhiteFragment"
+        android:label="FlatWhite Fragment"
+        android:name="com.example.coffee_app.coffee.FlatWhiteFragment"
+        tools:layout="@layout/fragment_flatwhite">
+        <action
+            android:id="@+id/action_flatwhiteFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/rafFragment"
+        android:name="com.example.coffee_app.coffee.RafFragment"
+        android:label="Raf Fragment"
+        tools:layout="@layout/fragment_raf">
+        <action
+            android:id="@+id/action_rafFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/moccachinoFragment"
+        android:label="Moccachino Fragment"
+        android:name="com.example.coffee_app.coffee.MoccachinoFragment"
+        tools:layout="@layout/fragment_moccachino">
+        <action
+            android:id="@+id/action_moccachinoFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
 
 
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.coffee_app.SecondFragment"
+        android:name="com.example.coffee_app.mains.SecondFragment"
         android:label="Second Fragment">
         <action
             android:id="@+id/action_secondFragment_to_FirstFragment"
@@ -155,12 +205,27 @@
         <action
             android:id="@+id/action_secondFragment_to_latteFragment"
             app:destination="@id/latteFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_vienneFragment"
+            app:destination="@id/vienneFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_melangeFragment"
+            app:destination="@id/melangeFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_flatwhiteFragment"
+            app:destination="@id/flatwhiteFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_rafFragment"
+            app:destination="@id/rafFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_moccachinoFragment"
+            app:destination="@id/moccachinoFragment" />
     </fragment>
 
 
     <activity
         android:id="@+id/mapActivity"
-        android:name="com.example.coffee_app.MapActivity"
+        android:name="com.example.coffee_app.mains.MapActivity"
         android:label="MapActivity" />
     <fragment
         android:id="@+id/americanoFragment"
@@ -182,7 +247,7 @@
 
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.example.coffee_app.ThirdFragment"
+        android:name="com.example.coffee_app.mains.ThirdFragment"
         android:label="Third Fragment">
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
@@ -221,5 +286,10 @@
             android:id="@+id/action_badianFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
+
+
+
+
+
 
 </navigation>

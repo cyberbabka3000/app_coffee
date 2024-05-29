@@ -1,4 +1,4 @@
-package com.example.coffee_app
+package com.example.coffee_app.mains
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.coffee_app.R
 import com.example.coffee_app.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
@@ -71,6 +72,26 @@ class SecondFragment : Fragment() {
 
         binding.buttonLatte.setOnClickListener {
             findNavController().navigate(R.id.action_secondFragment_to_latteFragment)
+        }
+
+        binding.buttonViennesecoffee.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_vienneFragment)
+        }
+
+        binding.buttonMelange.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_melangeFragment)
+        }
+
+        binding.buttonFlatWhite.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_flatwhiteFragment)
+        }
+
+        binding.buttonRafCoffee.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_rafFragment)
+        }
+
+        binding.buttonMoccachino.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_moccachinoFragment)
         }
 
     }
