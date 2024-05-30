@@ -16,7 +16,7 @@
             android:layout_height="85dp"
             android:background="@color/brown2"
             android:gravity="center"
-            android:text="Эспрессо"
+            android:text="Макиато"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -24,7 +24,7 @@
             android:layout_marginTop="0dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonReturn3"
+            android:id="@+id/buttonReturn22"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="20dp"
@@ -56,7 +56,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/wer2"
+                android:src="@drawable/ref2"
                 app:layout_constraintBottom_toTopOf="@+id/textName"/>
         </androidx.cardview.widget.CardView>
 
@@ -64,11 +64,11 @@
             android:id="@+id/textComposition"
             android:layout_width="419dp"
             android:layout_height="60dp"
-            android:layout_below="@id/buttonReturn3"
+            android:layout_below="@id/buttonReturn22"
             android:background="@color/brown1"
             android:gravity="center"
             android:layout_marginTop="16dp"
-            android:text="Состав: Эспрессо, разбавленный горячей водой."
+            android:text="Состав: Эспрессо, капля молока."
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -79,7 +79,7 @@
             android:layout_below="@id/textComposition"
             android:background="@color/beige"
             android:gravity="center"
-            android:text="Размер порции: 30-35 мл."
+            android:text="Размер порции: Обычно 30 мл."
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -90,9 +90,10 @@
             android:layout_below="@id/textPortionSize"
             android:background="@color/brown"
             android:gravity="center"
-            android:text="Вкус: Крепкий чёрный кофе с золотистой пенкой."
+            android:text="Вкус: Крепкий кофе с лёгким оттенком молока."
             android:textColor="@color/black"
             android:textSize="18sp" />
 
     </RelativeLayout>
+
 </ScrollView>

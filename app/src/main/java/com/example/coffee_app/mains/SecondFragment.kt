@@ -94,6 +94,22 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_secondFragment_to_moccachinoFragment)
         }
 
+        binding.buttonMacchiato.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_macchiatoFragment)
+        }
+
+        binding.buttonBombon.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_bombonFragment)
+        }
+
+        binding.buttonIrishcoffee.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_irishFragment)
+        }
+
+        binding.buttonCreamCafe.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_cremaFragment)
+        }
+
     }
 
     override fun onDestroyView() {

@@ -17,6 +17,28 @@
         android:background="@color/brown">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn50"
+            android:layout_width="125dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/brown"
+            app:strokeColor="@color/brown"
+            android:layout_marginStart="-20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="79dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="42dp">
+
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="78dp"
+                android:src="@drawable/was" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonAboutUs"
             android:layout_width="318dp"
             android:layout_height="80dp"
@@ -125,6 +147,7 @@
             app:strokeColor="@color/brown2"
             app:strokeWidth="5dp"
             tools:ignore="DuplicateIds,RtlHardcoded" />
+
 
     </RelativeLayout>
 </ScrollView>

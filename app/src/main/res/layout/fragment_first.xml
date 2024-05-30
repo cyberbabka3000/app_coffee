@@ -45,25 +45,13 @@
             android:paddingEnd="8dp"
             android:paddingBottom="4dp"
             app:cornerRadius="19dp"
+            android:text="         Виды кофе"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="italic"
             app:strokeColor="@color/brown2"
             app:strokeWidth="5dp"
             tools:ignore="DuplicateIds,RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/textFirst"
-            android:layout_width="318dp"
-            android:layout_height="100dp"
-            android:layout_alignEnd="@+id/buttonFirst"
-            android:layout_marginStart="-37dp"
-            android:layout_marginTop="310dp"
-            android:layout_marginEnd="-36dp"
-            android:layout_toEndOf="@+id/cardViewFirst"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Виды кофе"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="italic" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewFirst"
@@ -97,24 +85,12 @@
             android:paddingBottom="4dp"
             app:cornerRadius="19dp"
             app:strokeColor="@color/brown2"
-            app:strokeWidth="5dp"
-            tools:ignore="DuplicateIds,RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/textSecond"
-            android:layout_width="318dp"
-            android:layout_height="100dp"
-            android:layout_alignEnd="@+id/buttonSecond"
-            android:layout_marginStart="-49dp"
-            android:layout_marginTop="446dp"
-            android:layout_marginEnd="-24dp"
-            android:layout_toEndOf="@+id/cardViewSecond"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Добавки"
+            android:text="       Добавки"
             android:textColor="@color/white"
             android:textSize="32sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            app:strokeWidth="5dp"
+            tools:ignore="DuplicateIds,RtlHardcoded" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewSecond"
@@ -148,24 +124,12 @@
             android:paddingBottom="4dp"
             app:cornerRadius="19dp"
             app:strokeColor="@color/brown2"
-            app:strokeWidth="5dp"
-            tools:ignore="DuplicateIds,RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/textThird"
-            android:layout_width="318dp"
-            android:layout_height="100dp"
-            android:layout_alignEnd="@+id/buttonThird"
-            android:layout_marginStart="-52dp"
-            android:layout_marginTop="582dp"
-            android:layout_marginEnd="-21dp"
-            android:layout_toEndOf="@+id/cardViewThird"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Карты"
+            android:text="      Карты"
             android:textColor="@color/white"
             android:textSize="32sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            app:strokeWidth="5dp"
+            tools:ignore="DuplicateIds,RtlHardcoded" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewThird"
@@ -181,6 +145,30 @@
                 android:layout_height="75dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/second" />
+
         </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFour"
+            android:layout_width="318dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="715dp"
+            android:layout_marginEnd="47dp"
+            android:backgroundTint="@color/brown1"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            app:cornerRadius="19dp"
+            app:strokeColor="@color/brown2"
+            android:text="Далее"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="32sp"
+            app:strokeWidth="5dp"
+            tools:ignore="DuplicateIds,RtlHardcoded" />
+
     </RelativeLayout>
 </ScrollView>

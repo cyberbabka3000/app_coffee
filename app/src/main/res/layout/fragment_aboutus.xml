@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown2">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="419dp"
+            android:layout_height="85dp"
+            android:background="@color/brown2"
+            android:gravity="center"
+            android:text="О нас"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn42"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="42dp"
+            app:layout_constraintBottom_toTopOf="@+id/textName">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/textName"
+                android:src="@drawable/was" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="419dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/buttonReturn42"
+            android:background="@color/brown1"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Добро пожаловать в наше приложение Coffe time! Мы – команда разработчков из группы БВТ2205, обеденённая общей целью и идеей выучит что то новое. Задумка же максимально проста: создать удобное и интуитивно понятное приложение, которое сделает опыт изучения кофе более удобным и понятным."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textGratitude"
+            android:layout_width="419dp"
+            android:layout_height="210dp"
+            android:layout_below="@id/textDescription"
+            android:background="@color/beige"
+            android:text="Каждый член комманды, внёс определённый вклад в разработку этого приложения. Мы - комманада, которая специализируется в разных областях програмирования и дизайна. Мы стремимся к совершентвованию своих знаний в области програмирования, а так же в аспекте разработки мобильных приложений, что бы ваш опыт использования приложения был максимально удобным."
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textParticipants"
+            android:layout_width="419dp"
+            android:layout_height="259dp"
+            android:layout_below="@id/textGratitude"
+            android:background="@color/brown"
+            android:text="
+
+Используя наше приложение вы можете быть уверены, что вся информаци о кофе будет достоверноей и легко доступной. Спасибо что выбираете нас!
+\n
+\nВ разработке приложения учавствовали:
+\nГоршкова Ольга -
+\nДзускаева Алина -
+\nКудинов Андрей -
+\nЗудяева Кристина -
+\nШкилева Виолетта -"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

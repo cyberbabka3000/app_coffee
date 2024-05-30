@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.coffee_app.mains.FirstFragment"
-        android:label="First Fragment">
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_first">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -20,6 +21,9 @@
         <action
             android:id="@+id/action_firstFragment_to_mapActivity"
             app:destination="@id/mapActivity" />
+        <action
+            android:id="@+id/action_firstFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
 
     </fragment>
 
@@ -163,12 +167,32 @@
             app:destination="@+id/secondFragment"/>
     </fragment>
 
+    <fragment
+        android:label="Macchiato Fragment"
+        android:name="com.example.coffee_app.coffee.MacchiatoFragment"
+        android:id="@+id/macchiatoFragment"
+        tools:layout="@layout/fragment_macchiato">
+        <action
+            android:id="@+id/action_macchiatoFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bombonFragment"
+        android:name="com.example.coffee_app.coffee.BombonFragment"
+        android:label="Bombon Fragment"
+        tools:layout="@layout/fragment_bombon">
+        <action
+            android:id="@+id/action_bombonFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
 
 
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.coffee_app.mains.SecondFragment"
-        android:label="Second Fragment">
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_secondFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
@@ -220,6 +244,18 @@
         <action
             android:id="@+id/action_secondFragment_to_moccachinoFragment"
             app:destination="@id/moccachinoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_macchiatoFragment"
+            app:destination="@id/macchiatoFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_bombonFragment"
+            app:destination="@id/bombonFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_irishFragment"
+            app:destination="@id/irishFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_cremaFragment"
+            app:destination="@id/cremaFragment" />
     </fragment>
 
 
@@ -227,10 +263,13 @@
         android:id="@+id/mapActivity"
         android:name="com.example.coffee_app.mains.MapActivity"
         android:label="MapActivity" />
+
+
     <fragment
         android:id="@+id/americanoFragment"
         android:name="com.example.coffee_app.coffee.AmericanoFragment"
-        android:label="AmericanoFragment" >
+        android:label="AmericanoFragment"
+        tools:layout="@layout/fragment_americano">
         <action
             android:id="@+id/action_americanoFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
@@ -239,7 +278,8 @@
     <fragment
         android:id="@+id/doppioFragment"
         android:name="com.example.coffee_app.coffee.DoppioFragment"
-        android:label="DoppioFragment" >
+        android:label="DoppioFragment"
+        tools:layout="@layout/fragment_doppio">
         <action
             android:id="@+id/action_doppioFragment_to_secondFragment"
             app:destination="@id/secondFragment"/>
@@ -248,7 +288,8 @@
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.coffee_app.mains.ThirdFragment"
-        android:label="Third Fragment">
+        android:label="Third Fragment"
+        tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/firstFragment" />
@@ -262,34 +303,91 @@
             android:id="@+id/action_thirdFragment_to_badianFragment"
             app:destination="@id/badianFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/cinnamonFragment"
         android:name="com.example.coffee_app.supplements.CinnamonFragment"
-        android:label="CinnamonFragment" >
+        android:label="CinnamonFragment"
+        tools:layout="@layout/fragment_cinnamon">
         <action
             android:id="@+id/action_cinnamonFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/vanillaFragment"
         android:name="com.example.coffee_app.supplements.VanillaFragment"
-        android:label="VanillaFragment" >
+        android:label="VanillaFragment"
+        tools:layout="@layout/fragment_vanilla">
         <action
             android:id="@+id/action_vanillaFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/badianFragment"
         android:name="com.example.coffee_app.supplements.BadianFragment"
-        android:label="BadianFragment" >
+        android:label="BadianFragment"
+        tools:layout="@layout/fragment_badian">
         <action
             android:id="@+id/action_badianFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/irishFragment"
+        android:label="Irish Fragment"
+        android:name="com.example.coffee_app.coffee.IrishFragment"
+        tools:layout="@layout/fragment_irish">
+        <action
+            android:id="@+id/action_irishFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
 
+    <fragment
+        android:id="@+id/cremaFragment"
+        android:name="com.example.coffee_app.coffee.CremaFragment"
+        android:label="Crema Fragment"
+        tools:layout="@layout/fragment_crema">
+        <action
+            android:id="@+id/action_cremaFragment_to_secondFragment"
+            app:destination="@+id/secondFragment"/>
+    </fragment>
 
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.coffee_app.mains.FourFragment"
+        android:label="Four Fragment"
+        tools:layout="@layout/fragment_four">
+        <action
+            android:id="@+id/action_fourFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_fourFragment_to_aboutusFragment"
+            app:destination="@id/aboutusFragment" />
+        <action
+            android:id="@+id/action_fourFragment_to_questionfragment"
+            app:destination="@id/questionfragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/aboutusFragment"
+        android:label="About us Fragment"
+        android:name="com.example.coffee_app.abts.AboutusFragment"
+        tools:layout="@layout/fragment_aboutus">
+        <action
+            android:id="@+id/action_aboutusFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
 
+    <fragment
+        android:name="com.example.coffee_app.abts.QuestionFragment"
+        android:label="Question Fragment"
+        android:id="@+id/questionfragment"
+        tools:layout="@layout/fragment_question">
+        <action
+            android:id="@+id/action_questionfragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
 
 </navigation>
