@@ -302,6 +302,54 @@
         <action
             android:id="@+id/action_thirdFragment_to_badianFragment"
             app:destination="@id/badianFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_carnationFragment"
+            app:destination="@id/carnationFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_gingerFragment"
+            app:destination="@id/gingerFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_blackFragment"
+            app:destination="@id/blackFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_redFragment"
+            app:destination="@id/redFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_saltFragment"
+            app:destination="@id/saltFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_nutFragment"
+            app:destination="@id/nutFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_coconutFragment"
+            app:destination="@id/coconutFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_butterFragment"
+            app:destination="@id/butterFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_caramelFragment"
+            app:destination="@id/caramelFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_cheeseFragment"
+            app:destination="@id/cheeseFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_tonicFragment"
+            app:destination="@id/tonicFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_mintFragment"
+            app:destination="@id/mintFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_lavanderFragment"
+            app:destination="@id/lavanderFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_citrusFragment"
+            app:destination="@id/citrusFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_honeyFragment"
+            app:destination="@id/honeyFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_alcoFragment"
+            app:destination="@id/alcoFragment" />
     </fragment>
 
     <fragment
@@ -331,6 +379,168 @@
         tools:layout="@layout/fragment_badian">
         <action
             android:id="@+id/action_badianFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carnationFragment"
+        android:name="com.example.coffee_app.supplements.CarnationFragment"
+        android:label="Carnation Fragment"
+        tools:layout="@layout/fragment_carnation">
+        <action
+            android:id="@+id/action_carnationFragment_to_thirdFragment"
+            app:destination="@+id/thirdFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/gingerFragment"
+        android:label="Ginger"
+        android:name="com.example.coffee_app.supplements.GingerFragment"
+        tools:layout="@layout/fragment_ginger">
+        <action
+            android:id="@+id/action_gingerFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blackFragment"
+        android:label="Black"
+        android:name="com.example.coffee_app.supplements.BlackFragment"
+        tools:layout="@layout/fragment_black">
+        <action
+            android:id="@+id/action_blackFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/redFragment"
+        android:label="Red"
+        android:name="com.example.coffee_app.supplements.RedFragment"
+        tools:layout="@layout/fragment_red">
+        <action
+            android:id="@+id/action_redFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saltFragment"
+        android:label="Salt"
+        android:name="com.example.coffee_app.supplements.SaltFragment"
+        tools:layout="@layout/fragment_salt">
+        <action
+            android:id="@+id/action_saltFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nutFragment"
+        android:label="Nut"
+        android:name="com.example.coffee_app.supplements.NutFragment"
+        tools:layout="@layout/fragment_nut">
+        <action
+            android:id="@+id/action_nutFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coconutFragment"
+        android:label="Coconut"
+        android:name="com.example.coffee_app.supplements.CoconutFragment"
+        tools:layout="@layout/fragment_coconut">
+        <action
+            android:id="@+id/action_coconutFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/butterFragment"
+        android:label="Butter"
+        android:name="com.example.coffee_app.supplements.ButterFragment"
+        tools:layout="@layout/fragment_butter">
+        <action
+            android:id="@+id/action_butterFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/caramelFragment"
+        android:label="Caramel"
+        android:name="com.example.coffee_app.supplements.CaramelFragment"
+        tools:layout="@layout/fragment_caramel">
+        <action
+            android:id="@+id/action_caramelFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cheeseFragment"
+        android:label="Cheese"
+        android:name="com.example.coffee_app.supplements.CheeseFragment"
+        tools:layout="@layout/fragment_cheese">
+        <action
+            android:id="@+id/action_cheeseFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tonicFragment"
+        android:label="Tonic"
+        android:name="com.example.coffee_app.supplements.TonicFragment"
+        tools:layout="@layout/fragment_tonic">
+        <action
+            android:id="@+id/action_tonicFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mintFragment"
+        android:label="Mint"
+        android:name="com.example.coffee_app.supplements.MintFragment"
+        tools:layout="@layout/fragment_mint">
+        <action
+            android:id="@+id/action_mintFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/lavanderFragment"
+        android:label="Lavander"
+        android:name="com.example.coffee_app.supplements.LavanderFragment"
+        tools:layout="@layout/fragment_lavander">
+        <action
+            android:id="@+id/action_lavanderFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/citrusFragment"
+        android:label="Citrus"
+        android:name="com.example.coffee_app.supplements.CitrusFragment"
+        tools:layout="@layout/fragment_citrus">
+        <action
+            android:id="@+id/action_citrusFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/honeyFragment"
+        android:label="Honey"
+        android:name="com.example.coffee_app.supplements.HoneyFragment"
+        tools:layout="@layout/fragment_honey">
+        <action
+            android:id="@+id/action_honeyFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alcoFragment"
+        android:label="Alcohol"
+        android:name="com.example.coffee_app.supplements.AlcoFragment"
+        tools:layout="@layout/fragment_alco">
+        <action
+            android:id="@+id/action_alcoFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
 
@@ -368,6 +578,9 @@
         <action
             android:id="@+id/action_fourFragment_to_questionfragment"
             app:destination="@id/questionfragment" />
+        <action
+            android:id="@+id/action_fourFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
     </fragment>
 
     <fragment
@@ -388,6 +601,16 @@
         <action
             android:id="@+id/action_questionfragment_to_fourFragment"
             app:destination="@id/fourFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:label="Review Fragment"
+        android:name="com.example.coffee_app.abts.ReviewFragment"
+        tools:layout="@layout/fragment_review">
+        <action
+            android:id="@+id/action_reviewFragment_to_fourFragment"
+            app:destination="@+id/fourFragment"/>
     </fragment>
 
 </navigation>

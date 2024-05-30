@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintTop_toTopOf="parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:padding="40dp"
-        android:background="@color/brown"
-        tools:context=".supplements.CinnamonFragment">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonReturn6"
-            android:layout_width="76dp"
-            android:layout_height="76dp"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imageCinnamon"
-            android:layout_width="76dp"
-            android:layout_height="76dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/was"
-            app:layout_constraintBottom_toTopOf="@+id/textName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="76dp"
-            android:layout_height="76dp"
-            tools:layout_editor_absoluteY="-4dp"
-            tools:layout_editor_absoluteX="250dp"
-            app:cardCornerRadius="34dp"
-            tools:ignore="MissingConstraints">
-            <ImageView android:layout_width="76dp"
-                android:scaleType="centerCrop"
-                android:layout_height="76dp"
-                tools:layout_editor_absoluteY="-4dp"
-                android:src="@drawable/wer"
-                tools:layout_editor_absoluteX="250dp"/>
-        </androidx.cardview.widget.CardView>
+        android:background="@color/brown2">
 
         <TextView
             android:id="@+id/textName"
-            android:layout_width="147dp"
-            android:layout_height="39dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="419dp"
+            android:layout_height="85dp"
+            android:background="@color/brown2"
+            android:gravity="center"
             android:text="Корица"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.182"
-            app:layout_constraintStart_toEndOf="@+id/imageCinnamon"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="42dp"
+            app:layout_constraintBottom_toTopOf="@+id/textName">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/textName"
+                android:src="@drawable/was" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="34dp"
+            app:layout_constraintBottom_toTopOf="@+id/textName">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wer"
+                app:layout_constraintBottom_toTopOf="@+id/textName"/>
+        </androidx.cardview.widget.CardView>
+
         <TextView
             android:id="@+id/textComposition"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
+            android:layout_width="419dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/buttonReturn6"
+            android:background="@color/brown1"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
             android:text="Влияние на вкус: Добавление корицы придает кофе особый вкус. Пряные, слегка
 сладкие и теплые нотки корицы могут смягчить горечь кофе и придать ему
 некоторую сложность. Это особенно актуально для кофейных напитков с молоком,
 где корица может хорошо сочетаться с молочными нотками."
             android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textName" />
-
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textPortionSize"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="419dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/textComposition"
+            android:background="@color/beige"
+            android:gravity="center"
             android:text="Свойства: Антиоксиданты: Корица содержит антиоксиданты, которые могут быть
 полезны для здоровья.
 Противовоспалительные свойства: Исследования показывают, что корица
 может обладать противовоспалительными свойствами, что может быть
 полезно для организма."
             android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textComposition" />
+            android:textSize="18sp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
 </ScrollView>

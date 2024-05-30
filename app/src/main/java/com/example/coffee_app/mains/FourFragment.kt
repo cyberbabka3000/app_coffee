@@ -37,6 +37,10 @@ class FourFragment : Fragment() {
             findNavController().navigate(R.id.action_fourFragment_to_questionfragment)
         }
 
+        binding.buttonReviews.setOnClickListener {
+            findNavController().navigate(R.id.action_fourFragment_to_reviewFragment)
+        }
+
     }
 
     override fun onDestroyView() {

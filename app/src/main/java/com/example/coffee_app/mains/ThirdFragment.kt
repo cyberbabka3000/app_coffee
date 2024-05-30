@@ -42,8 +42,69 @@ class ThirdFragment : Fragment() {
             findNavController().navigate(R.id.action_thirdFragment_to_badianFragment)
         }
 
+        binding.buttonCarnation.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_carnationFragment)
+        }
 
+        binding.buttonGinger.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_gingerFragment)
+        }
 
+        binding.buttonBlackpepper.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_blackFragment)
+        }
+
+        binding.buttonSalt.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_saltFragment)
+        }
+
+        binding.buttonRedpepper.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_redFragment)
+        }
+
+        binding.buttonNutmeg.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_nutFragment)
+        }
+
+        binding.buttonCoconutoil.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_coconutFragment)
+        }
+
+        binding.buttonButter.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_butterFragment)
+        }
+
+        binding.buttonCaramel.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_caramelFragment)
+        }
+
+        binding.buttonCheese.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_cheeseFragment)
+        }
+
+        binding.buttonTonic.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_tonicFragment)
+        }
+
+        binding.buttonMint.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_mintFragment)
+        }
+
+        binding.buttonLavender.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_lavanderFragment)
+        }
+
+        binding.buttonCitrusfruits.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_citrusFragment)
+        }
+
+        binding.buttonHoney.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_honeyFragment)
+        }
+
+        binding.buttonAlcohol.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_alcoFragment)
+        }
     }
 
     override fun onDestroyView() {

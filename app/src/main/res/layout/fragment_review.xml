@@ -17,7 +17,7 @@
             android:layout_height="85dp"
             android:background="@color/brown2"
             android:gravity="center"
-            android:text="Задать вопрос"
+            android:text="Написать отзыв"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -94,7 +94,7 @@
             android:layout_below="@id/editTextEmail"
             android:layout_marginTop="0dp"
             android:background="@color/brown"
-            android:text="Вопрос:"
+            android:text="Отзыв:"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -105,7 +105,7 @@
             android:layout_below="@id/textQuestion"
             android:layout_marginTop="-562dp"
             android:background="@color/brown"
-            android:hint="Задайте ваш вопрос"
+            android:hint="Напишите ваш отзыв"
             android:inputType="textMultiLine"
             android:textColorHint="@color/black" />
 
@@ -120,7 +120,7 @@
             app:strokeWidth="1dp"
             app:cornerRadius="50dp"
             android:layout_alignParentEnd="true"
-            android:text="Отправить вопрос"
+            android:text="Отправить отзыв"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:paddingStart="8dp"
@@ -128,7 +128,6 @@
             android:paddingTop="2dp"
             android:paddingBottom="4dp"
             android:layout_marginEnd="44dp"/>
-
     </RelativeLayout>
 
 </ScrollView>

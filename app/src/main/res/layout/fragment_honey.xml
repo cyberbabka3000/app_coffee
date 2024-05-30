@@ -17,7 +17,7 @@
             android:layout_height="85dp"
             android:background="@color/brown2"
             android:gravity="center"
-            android:text="Бадьян"
+            android:text="Мед"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -25,7 +25,7 @@
             android:layout_marginTop="0dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonReturn8"
+            android:id="@+id/buttonReturn40"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="20dp"
@@ -57,7 +57,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/xaz"
+                android:src="@drawable/ban"
                 app:layout_constraintBottom_toTopOf="@+id/textName"/>
         </androidx.cardview.widget.CardView>
 
@@ -65,11 +65,11 @@
             android:id="@+id/textComposition"
             android:layout_width="419dp"
             android:layout_height="170dp"
-            android:layout_below="@id/buttonReturn8"
+            android:layout_below="@id/buttonReturn40"
             android:background="@color/brown1"
             android:gravity="center"
             android:layout_marginTop="16dp"
-            android:text="Влияние на вкус: Бадьян добавляет кофе анисовые и слегка сладковатые нотки, создавая уникальный вкус с легкой пряностью."
+            android:text="Влияние на вкус: Мед добавляет кофе сладость и теплые нотки, создавая гармоничное сочетание с кофейными оттенками."
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -80,8 +80,8 @@
             android:layout_below="@id/textComposition"
             android:background="@color/beige"
             android:gravity="center"
-            android:text="Свойства: • Пряность: Бадьян придает кофе нежные пряные оттенки, что делает напиток более насыщенным.
-• Аромат: Анисовый аромат бадьяна придает кофе особую экзотическую нотку."
+            android:text="Свойства: • Природная сладость: Мед придает кофе приятную естественную сладость, что может быть особенно привлекательным для любителей сладких напитков.
+• Антибактериальные свойства: Мед обладает антибактериальными свойствами, что может способствовать поддержанию здоровья."
             android:textColor="@color/black"
             android:textSize="18sp" />
 

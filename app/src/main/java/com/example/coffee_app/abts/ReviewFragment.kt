@@ -10,18 +10,18 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.coffee_app.R
-import com.example.coffee_app.databinding.FragmentQuestionBinding
+import com.example.coffee_app.databinding.FragmentReviewBinding
 
-class QuestionFragment : Fragment() {
+class ReviewFragment : Fragment() {
 
-    private var _binding: FragmentQuestionBinding? = null
+    private var _binding: FragmentReviewBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentQuestionBinding.inflate(inflater, container, false)
+        _binding = FragmentReviewBinding.inflate(inflater, container, false)
         return _binding!!.root
     }
 
@@ -29,7 +29,7 @@ class QuestionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonReturn41.setOnClickListener {
-            findNavController().navigate(R.id.action_questionfragment_to_fourFragment)
+            findNavController().navigate(R.id.action_reviewFragment_to_fourFragment)
         }
 
         binding.buttonQuestions.setOnClickListener {
@@ -37,7 +37,7 @@ class QuestionFragment : Fragment() {
             val email = binding.editTextEmail.text.toString()
             val question = binding.editTextQuestion.text.toString()
 
-            val subject = "Вопрос от $name"
+            val subject = "Отзыв от $name"
             val message = "Имя: $name\nE-mail: $email\n\n$question"
 
             val intent = Intent(Intent.ACTION_SENDTO).apply {
@@ -53,7 +53,9 @@ class QuestionFragment : Fragment() {
             }
         }
 
+
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
